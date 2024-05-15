@@ -1,6 +1,6 @@
-const express = require("express");
-const cron = require("node-cron");
-const { runService, getStatus, getHistory } = require("./service");
+import express from "express";
+import cron from "node-cron";
+import { runService, getStatus, getHistory } from "./service.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;

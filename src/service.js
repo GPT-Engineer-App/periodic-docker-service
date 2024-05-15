@@ -23,4 +23,4 @@ const getHistory = () => {
   return history;
 };
 
-module.exports = { runService, getStatus, getHistory };
+export { runService, getStatus, getHistory };

@@ -15,6 +15,8 @@ app.get("/history", (req, res) => {
   res.json(getHistory());
 });
 
+runService();
+
 cron.schedule("*/5 * * * *", () => {
   runService();
 });

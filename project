@@ -1,0 +1,3 @@
+mkdir node-service
+cd node-service
+npm init -y

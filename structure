@@ -1,0 +1,12 @@
+node-service/
+├── src/
+│   ├── index.js
+│   ├── service.js
+│   └── dashboard/
+│       └── Index.jsx
+├── tests/
+│   └── service.test.js
+├── Dockerfile
+├── docker-compose.yml
+├── package.json
+└── jest.config.js

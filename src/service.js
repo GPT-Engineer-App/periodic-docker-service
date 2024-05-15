@@ -8,7 +8,9 @@ const runService = () => {
   // Simulate some work
   setTimeout(() => {
     const endTime = new Date();
-    history.push({ startTime, endTime, status: "completed" });
+    const status = Math.random() > 0.1 ? "Success" : "Failed";
+    history.push({ startTime, endTime, status });
+    if (history.length > 25) history.shift();
     status = "idle";
   }, 2000);
 };

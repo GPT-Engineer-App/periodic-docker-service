@@ -45,7 +45,7 @@ const Index = () => {
               <Tr key={index}>
                 <Td>{new Date(entry.startTime).toLocaleString()}</Td>
                 <Td>{new Date(entry.endTime).toLocaleString()}</Td>
-                <Td>{entry.status}</Td>
+                <Td>{entry.status === "Success" ? "Success" : "Failed"}</Td>
               </Tr>
             ))}
           </Tbody>

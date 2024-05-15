@@ -1,4 +1,4 @@
-let status = "idle";
+let currentStatus = "idle";
 let history = [];
 
 const runService = () => {
